@@ -1,5 +1,7 @@
 " Use light background
 set background=light
+" Enable backspace
+set backspace=2
 " Turn off the beep in vim
 set visualbell t_vb=
 " Turn on line numbering. Turn it off with "set nonu" 
