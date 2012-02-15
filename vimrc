@@ -33,11 +33,12 @@ set ignorecase
 "set smartcase  --- this works too.
 " special configuration for python
 autocmd Filetype python set expandtab tabstop=4 shiftwidth=4 sts=4
+autocmd Filetype perl set expandtab tabstop=4 shiftwidth=4 sts=4
 " special configuration for c & cpp
 autocmd Filetype c,cpp set cindent tabstop=2 shiftwidth=2 sts=2
 " special configuration for text
-autocmd Filetype text set tw=80
-autocmd Filetype tex set tw=80 expandtab tabstop=4 autoindent shiftwidth=4 sts=4
+autocmd Filetype text set tw=80 spell
+autocmd Filetype tex set tw=80 expandtab tabstop=4 autoindent shiftwidth=4 sts=4 spell
 autocmd Filetype java set tabstop=4 shiftwidth=4
 autocmd Filetype lisp set expandtab
 autocmd Filetype html set tabstop=2 autoindent shiftwidth=2 sts=2 
