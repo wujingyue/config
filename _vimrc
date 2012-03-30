@@ -46,7 +46,10 @@ autocmd Filetype java set tabstop=4 shiftwidth=4
 autocmd Filetype lisp set et
 autocmd Filetype html set tabstop=2 autoindent shiftwidth=2 sts=2 
 autocmd Filetype pascal set cindent tabstop=2 shiftwidth=2
+autocmd FileType make set sw=2 sts=2 ts=2
 " spell check
 let spell_auto_type = "tex"
 " uniform clipboard
 set clipboard=unnamed
+" shellpipe was changed to |tee unexpectedly. Change it back
+set shellpipe=2\>\|\ tee
