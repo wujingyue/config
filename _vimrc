@@ -24,7 +24,7 @@ set scrolloff=999
 set wildmode=full
 set wildmenu
 " Choose colorscheme
-colorscheme wombat
+colorscheme wombat256256
 " Printer option
 set printoptions=duplex:on,paper:letter
 " replace the dictionary with the coldfusion dictionary.
