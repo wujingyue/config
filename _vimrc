@@ -23,8 +23,8 @@ set hls
 set scrolloff=999
 set wildmode=full
 set wildmenu
-" Use default colorscheme
-colorscheme default
+" Choose colorscheme
+colorscheme molokai
 " Printer option
 set printoptions=duplex:on,paper:letter
 " replace the dictionary with the coldfusion dictionary.
