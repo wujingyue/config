@@ -1,6 +1,6 @@
 # Enable 256 colors
-#set -x TERM "xterm-256color"
-set -x TERM "xterm-color"
+set -x TERM "xterm-256color"
+#set -x TERM "xterm-color"
 # for LLVM
 set -x LLVM_ROOT $HOME/Research/llvm
 set -x LLVM_OBJ $LLVM_ROOT/llvm-obj
