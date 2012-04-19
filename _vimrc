@@ -24,7 +24,7 @@ set scrolloff=999
 set wildmode=full
 set wildmenu
 " Choose colorscheme
-colorscheme default
+colorscheme fav-light
 " Printer option
 set printoptions=duplex:on,paper:letter
 " replace the dictionary with the coldfusion dictionary.
@@ -56,3 +56,6 @@ set clipboard=unnamed
 " set makeprg=begin;\ make
 " set shellpipe=2\>&1;\ end\ \|\ tee
 set shellpipe=2\>&1\|\ tee
+" highlight if over 80 chars
+"hi OverLength ctermfg=white ctermbg=red
+"match OverLength /\%81v.\+/
