@@ -1,3 +1,5 @@
+" Set 256 color
+set t_Co=256
 " Use light background
 set background=light
 " Enable backspace
