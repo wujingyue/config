@@ -13,7 +13,6 @@ filetype plugin on
 " Define text filetype
 augroup filetype
 	au! BufRead,BufNewFile *.txt set filetype=text
-	au! BufRead,BufNewFile *.tex set filetype=text
 	au! BufRead,BufNewFile *.ll set filetype=llvm
 	au! BufRead,BufNewFile *.vid set filetype=llvm
 	au! BufRead,BufNewFile *.id set filetype=llvm
