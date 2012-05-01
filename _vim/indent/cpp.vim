@@ -30,7 +30,7 @@ function! GoogleCppIndent()
 
     let l:pline_num = prevnonblank(l:cline_num - 1)
     let l:pline = getline(l:pline_num)
-    if l:pline =~# '^\s*template' | return l:pline_indent | endif
+    if l:pline =~# '^\s*template' | return indent(l:pline_num) | endif
 
     " TODO: I don't know to correct it:
     " namespace test {
