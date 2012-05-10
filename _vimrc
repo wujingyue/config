@@ -46,7 +46,11 @@ autocmd FileType pascal set cindent tabstop=2 shiftwidth=2
 autocmd FileType make set sw=2 sts=2 ts=2
 autocmd FileType sh set sw=2 sts=2 ts=2
 " Remove trailing spaces
-autocmd FileType c,cpp,java,python,perl,sh,make autocmd BufWritePre <buffer> :%s/\s\+$//e
+function RemoveTrailingSpaces()
+	%s/\s\+$//e
+	''
+:endfunction
+" autocmd FileType c,cpp,java,python,perl,sh,make autocmd BufWritePre * :call RemoveTrailingSpaces()
 " spell check
 let spell_auto_type = "tex"
 " uniform clipboard
