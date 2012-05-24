@@ -53,8 +53,6 @@ function RemoveTrailingSpaces()
 " autocmd FileType c,cpp,java,python,perl,sh,make autocmd BufWritePre * :call RemoveTrailingSpaces()
 " spell check
 let spell_auto_type = "tex"
-" uniform clipboard
-set clipboard=unnamed
 " shellpipe was changed to |tee unexpectedly. Change it back
 " set makeprg=begin;\ make
 " set shellpipe=2\>&1;\ end\ \|\ tee
