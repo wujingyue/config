@@ -24,6 +24,7 @@ set hls
 set scrolloff=999
 set wildmode=full
 set wildmenu
+set colorcolumn=81
 " Choose colorscheme
 colorscheme fav-light
 " Printer option
