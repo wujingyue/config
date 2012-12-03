@@ -26,7 +26,7 @@ set wildmode=full
 set wildmenu
 set colorcolumn=81
 " Choose colorscheme
-colorscheme fav-light
+colorscheme solarized
 " Printer option
 set printoptions=duplex:on,paper:letter
 " replace the dictionary with the coldfusion dictionary.
