@@ -230,7 +230,6 @@ if exists("syntax_on")
   syntax reset
 endif
 let colors_name = "solarized"
-let g:solarized_termtrans = 1
 
 "}}}
 " GUI & CSApprox hexadecimal palettes"{{{
