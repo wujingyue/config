@@ -53,12 +53,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# bash completion
-# TODO: Do we really need this? Isn't it loaded already?
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
-
 # customized environmental variables
 if [ -f ~/.env_vars ]; then
     . ~/.env_vars
