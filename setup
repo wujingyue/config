@@ -1,5 +1,13 @@
 #!/bin/bash
 
+rm -rf ~/.vim
+rm -rf ~/.vimrc
+rm -rf ~/.bash_aliases
+rm -rf ~/.bash_profile
+rm -rf ~/.bashrc
+rm -rf ~/.dir_colors
+rm -rf ~/.tmux.conf
+rm -rf ~/.zshrc
 ln -sf $PWD/vim ~/.vim
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/bash_aliases ~/.bash_aliases
@@ -7,6 +15,4 @@ ln -sf $PWD/bash_profile ~/.bash_profile
 ln -sf $PWD/bashrc ~/.bashrc
 ln -sf $PWD/dir_colors ~/.dir_colors
 ln -sf $PWD/tmux.conf ~/.tmux.conf
-if [ -d ~/.config/fish ]; then
-	ln -sf $PWD/config.fish ~/.config/fish/config.fish
-fi
+ln -sf $PWD/zshrc ~/.zshrc
