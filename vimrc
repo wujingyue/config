@@ -15,9 +15,8 @@ filetype plugin on
 " Define text filetype
 augroup filetype
 	au! BufRead,BufNewFile *.txt set filetype=text
-	au! BufRead,BufNewFile *.ll set filetype=llvm
-	au! BufRead,BufNewFile *.vid set filetype=llvm
-	au! BufRead,BufNewFile *.iid set filetype=llvm
+	au! BufRead,BufNewFile *.ll,*.vid,*.iid set filetype=llvm
+	au! BufRead,BufNewFile *.dart set filetype=dart
 augroup END
 " Highlight search
 set hls
@@ -37,12 +36,13 @@ set complete-=k complete+=k
 set ignorecase
 "set smartcase  --- this works too.
 autocmd FileType python,perl set et tabstop=4 shiftwidth=4 sts=4
+autocmd FileType ruby set et ts=2 sw=2 sts=2
 autocmd FileType c,cpp set et cindent tabstop=2 shiftwidth=2 sts=2
 autocmd FileType text set tw=80 spell
 autocmd FileType plaintex,tex set tw=80 spell noci noai nosi inde=
 autocmd FileType java set tabstop=4 shiftwidth=4
 autocmd FileType lisp set et
-autocmd FileType html set tabstop=2 autoindent shiftwidth=2 sts=2
+autocmd FileType html set et ts=4 ai sw=4 sts=4
 autocmd FileType pascal set cindent tabstop=2 shiftwidth=2
 autocmd FileType make set sw=2 sts=2 ts=2
 autocmd FileType sh set sw=2 sts=2 ts=2
@@ -57,6 +57,7 @@ let spell_auto_type = "tex"
 " shellpipe was changed to |tee unexpectedly. Change it back
 " set makeprg=begin;\ make
 " set shellpipe=2\>&1;\ end\ \|\ tee
+set makeprg=make\ -w
 set shellpipe=2\>&1\|\ tee
 " highlight if over 80 chars
 "hi OverLength ctermfg=white ctermbg=red
