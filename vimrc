@@ -17,6 +17,7 @@ augroup filetype
 	au! BufRead,BufNewFile *.txt set filetype=text
 	au! BufRead,BufNewFile *.ll,*.vid,*.iid set filetype=llvm
 	au! BufRead,BufNewFile *.dart set filetype=dart
+	au! BufRead,BufNewFile CMakeLists.txt set filetype=cmake
 augroup END
 " Highlight search
 set hls
@@ -43,9 +44,10 @@ autocmd FileType plaintex,tex set tw=80 spell noci noai nosi inde=
 autocmd FileType java set tabstop=4 shiftwidth=4
 autocmd FileType lisp set et
 autocmd FileType html set et ts=4 ai sw=4 sts=4
-autocmd FileType pascal set cindent tabstop=2 shiftwidth=2
+autocmd FileType pascal set ci ts=2 sw=2
 autocmd FileType make set sw=2 sts=2 ts=2
 autocmd FileType sh set sw=2 sts=2 ts=2
+autocmd FileType cmake set sw=2 sts=2 ts=2
 " Remove trailing spaces
 function RemoveTrailingSpaces()
 	%s/\s\+$//e
