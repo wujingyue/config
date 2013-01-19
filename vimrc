@@ -48,6 +48,7 @@ autocmd FileType pascal set ci ts=2 sw=2
 autocmd FileType make set sw=2 sts=2 ts=2
 autocmd FileType sh set sw=2 sts=2 ts=2
 autocmd FileType cmake set sw=2 sts=2 ts=2
+autocmd FileType markdown set tw=80 spell
 " Remove trailing spaces
 function RemoveTrailingSpaces()
 	%s/\s\+$//e
