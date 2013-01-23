@@ -23,6 +23,9 @@ alias sudo='nocorrect sudo'
 # Set the output format of "time".
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 
+# Disable completing user names
+zstyle ':completion:*' users
+
 # copied from .bash_profile
 # enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
