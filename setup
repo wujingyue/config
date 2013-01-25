@@ -8,6 +8,7 @@ rm -rf ~/.bashrc
 rm -rf ~/.dir_colors
 rm -rf ~/.tmux.conf
 rm -rf ~/.zshrc
+
 ln -sf $PWD/vim ~/.vim
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/bash_aliases ~/.bash_aliases
@@ -16,3 +17,7 @@ ln -sf $PWD/bashrc ~/.bashrc
 ln -sf $PWD/dir_colors ~/.dir_colors
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 ln -sf $PWD/zshrc ~/.zshrc
+
+if [ ! \( -e ~/.oh-my-zsh \) ]; then
+	git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+fi
