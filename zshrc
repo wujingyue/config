@@ -14,11 +14,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# See this post:
-# http://unix.stackexchange.com/questions/34390/zsh-wants-to-correct-vim-to-vim
-# Without this alias, 'sudo vim' will ask for correction to .vim, because zsh
-# considers the vim here as an argument, and thinks .vim is a closer match.
-alias sudo='nocorrect sudo'
+# Disable autocorrect
+unsetopt correct_all
 
 # Set the output format of "time".
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
