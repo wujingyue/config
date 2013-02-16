@@ -21,10 +21,14 @@ augroup filetype
 augroup END
 " Highlight search
 set hls
+" Put the current line always in the middle
 set scrolloff=999
 set wildmode=full
 set wildmenu
+" Highlight the bound
 set colorcolumn=81
+" Enable modeline, e.g., vim: sw=2
+set modeline
 " Choose colorscheme
 colorscheme solarized
 " Printer option
