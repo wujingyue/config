@@ -33,6 +33,8 @@ set modeline
 colorscheme solarized
 " Printer option
 set printoptions=duplex:on,paper:letter
+" Highlight the cursor line
+set cursorline
 " replace the dictionary with the coldfusion dictionary.
 set dictionary+=/usr/share/dict/words
 " turn on completion matching
