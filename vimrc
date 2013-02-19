@@ -46,7 +46,7 @@ set ignorecase
 autocmd FileType python,perl set et tabstop=4 shiftwidth=4 sts=4
 autocmd FileType ruby set et ts=2 sw=2 sts=2
 autocmd FileType c,cpp set et cindent tabstop=2 shiftwidth=2 sts=2
-autocmd FileType text set tw=80 spell
+autocmd FileType text set et ts=2 sw=2 sts=2 tw=80 spell
 autocmd FileType plaintex,tex set tw=80 spell noci noai nosi inde=
 autocmd FileType java set tabstop=4 shiftwidth=4
 autocmd FileType lisp set et
