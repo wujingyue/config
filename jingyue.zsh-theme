@@ -5,7 +5,7 @@ local current_dir='%{$fg[blue]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
 PROMPT="╭─${user_host} in ${current_dir} ${git_branch}
-╰─> "
+╰─ "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="on %{$fg[yellow]%}"
