@@ -25,6 +25,8 @@ set hls
 set scrolloff=999
 set wildmode=full
 set wildmenu
+" always show the status line
+set ls=2
 " Highlight the bound
 set colorcolumn=81
 " Enable modeline, e.g., vim: sw=2
