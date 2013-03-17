@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ~/.vim # otherwise 'ln -sf $PWD/vim ~/.vim' would behave strangely
+
 ln -sf $PWD/vim ~/.vim
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/bash_aliases ~/.bash_aliases
