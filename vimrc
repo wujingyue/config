@@ -64,8 +64,8 @@ function RemoveTrailingSpaces()
 	''
 :endfunction
 " autocmd FileType c,cpp,java,python,perl,sh,make autocmd BufWritePre * :call RemoveTrailingSpaces()
-" spell check
-let spell_auto_type = "tex"
+" spell check. disabled because it apparently slows down vim a lot.
+" let spell_auto_type = "tex"
 " shellpipe was changed to |tee unexpectedly. Change it back
 " set makeprg=begin;\ make
 " set shellpipe=2\>&1;\ end\ \|\ tee
