@@ -72,6 +72,3 @@ function RemoveTrailingSpaces()
 " set shellpipe=2\>&1;\ end\ \|\ tee
 set makeprg=make\ -w
 set shellpipe=2\>&1\|\ tee
-" highlight if over 80 chars
-"hi OverLength ctermfg=white ctermbg=red
-"match OverLength /\%81v.\+/
