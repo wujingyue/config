@@ -368,6 +368,7 @@ endif
 "}}}
 " Background value based on termtrans setting "{{{
 " ---------------------------------------------------------------------
+let g:solarized_termtrans = 1
 if (has("gui_running") || g:solarized_termtrans == 0)
     let s:back        = s:base03
 else
