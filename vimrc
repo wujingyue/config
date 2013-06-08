@@ -9,7 +9,6 @@ set visualbell t_vb=
 " Turn on line numbering. Turn it off with "set nonu" 
 set nu 
 set ruler
-syntax on
 filetype indent on
 filetype plugin on
 " Define text filetype
@@ -19,6 +18,7 @@ augroup filetype
 	au! BufRead,BufNewFile *.dart set filetype=dart
 	au! BufRead,BufNewFile CMakeLists.txt set filetype=cmake
 augroup END
+syntax on
 " Highlight search
 set hls
 " Put the current line always in the middle
