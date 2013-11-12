@@ -1,7 +1,7 @@
 " Set 256 color
 set t_Co=256
 " Use light background
-set background=light
+set background=dark
 " Enable backspace
 set backspace=2
 " Turn off the beep in vim
