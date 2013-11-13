@@ -1,0 +1,7 @@
+Host web
+	HostName 54.200.185.237
+	User ubuntu
+
+Host opt
+	HostName 54.201.64.206
+	User ubuntu
