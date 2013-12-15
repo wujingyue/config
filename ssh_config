@@ -7,7 +7,7 @@ Host web2
 	User ubuntu
 
 Host opt
-	HostName 54.201.64.206
+	HostName 54.201.159.149
 	User ubuntu
 
 Host opt2
