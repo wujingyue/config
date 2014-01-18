@@ -40,7 +40,7 @@ fi
 
 # bash completion
 # TODO: Do we really need this? Isn't it loaded already?
-if [ -f /etc/bash_completion ]; then
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
