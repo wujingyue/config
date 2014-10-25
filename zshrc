@@ -14,6 +14,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+source $ZSH/plugins/history-substring-search/history-substring-search.zsh
+
 # Disable autocorrect
 unsetopt correct_all
 
