@@ -1,3 +1,5 @@
+SHELL=/bin/zsh
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -18,6 +20,10 @@ source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 
 # Disable autocorrect
 unsetopt correct_all
+unsetopt nomatch
+
+setopt inc_append_history
+setopt share_history
 
 # Set the output format of "time".
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
