@@ -20,7 +20,6 @@ ln -sf $PWD/gitconfig ~/.gitconfig
 if [ ! \( -e ~/.ssh \) ]; then
 	mkdir ~/.ssh
 fi
-ln -sf $PWD/ssh_config ~/.ssh/config
 
 if [ ! \( -e ~/.oh-my-zsh \) ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
