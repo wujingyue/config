@@ -72,6 +72,3 @@ function RemoveTrailingSpaces()
 " set shellpipe=2\>&1;\ end\ \|\ tee
 set makeprg=make\ -w
 set shellpipe=2\>&1\|\ tee
-
-map <C-I> :pyf ~/.vim/clang-format.py<CR>
-imap <C-I> <ESC>:pyf ~/.vim/clang-format.py<CR>i
