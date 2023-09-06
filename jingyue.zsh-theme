@@ -1,2 +1,10 @@
 NEWLINE=$'\n'
-PROMPT="%{$fg_bold[cyan]%}%n @ %m : %~${NEWLINE}$ %{$reset_color%}"
+
+# Primary prompt.
+PS1="%{$fg_bold[cyan]%}%n @ %m : %~ \$(git_prompt_info)${NEWLINE}$ %{$reset_color%}"
+
+# git settings
+ZSH_THEME_GIT_PROMPT_PREFIX="$fg[red]("
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+ZSH_THEME_GIT_PROMPT_DIRTY="*"
+ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
