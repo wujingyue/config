@@ -34,17 +34,11 @@ set modeline
 set modelines=5 " vim in mac sets this to 0 by default
 " Choose colorscheme
 colorscheme solarized
-" Printer option
-set printoptions=duplex:on,paper:letter
 " Highlight the cursor line
 set cursorline
-" replace the dictionary with the coldfusion dictionary.
-set dictionary+=/usr/share/dict/words
-" turn on completion matching
-set complete-=k complete+=k
-" and make matching case insensitive.
+" Make matching case insensitive.
 set ignorecase
-"set smartcase  --- this works too.
+" Filetype specific formatting.
 autocmd FileType python,perl set et tabstop=4 shiftwidth=4 sts=4
 autocmd FileType ruby set et ts=2 sw=2 sts=2
 autocmd FileType yacc,c,cpp,cuda set et ci ts=2 sw=2 sts=2
@@ -59,16 +53,3 @@ autocmd FileType sh set sw=2 sts=2 ts=2
 autocmd FileType cmake set sw=2 sts=2 ts=2
 autocmd FileType markdown set tw=80 spell
 autocmd FileType php,ruby,javascript set et sw=2 sts=2 ts=2
-" Remove trailing spaces
-function RemoveTrailingSpaces()
-	%s/\s\+$//e
-	''
-:endfunction
-" autocmd FileType c,cpp,java,python,perl,sh,make autocmd BufWritePre * :call RemoveTrailingSpaces()
-" spell check. disabled because it apparently slows down vim a lot.
-" let spell_auto_type = "tex"
-" shellpipe was changed to |tee unexpectedly. Change it back
-" set makeprg=begin;\ make
-" set shellpipe=2\>&1;\ end\ \|\ tee
-set makeprg=make\ -w
-set shellpipe=2\>&1\|\ tee
