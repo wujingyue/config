@@ -31,17 +31,7 @@ TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 # Disable completing user names
 zstyle ':completion:*' users
 
-# copied from .bash_profile
-# enable color support of ls
-if [ -x /usr/bin/dircolors ]; then
-    eval "`dircolors ~/.dir_colors`"
-    alias ls='ls --color=auto'
-else
-    # If dircolors is not available, use the standard LS_COLORS
-    # FIXME: port dircolors to Mac OSX
-    LSCOLORS=exfxcxdxbxegedabagacad
-    alias ls='ls -G'
-fi
+alias ls='ls --color=auto'
 
 # alias definitions
 if [ -f ~/.bash_aliases ]; then

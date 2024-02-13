@@ -9,8 +9,6 @@ ln -sf $PWD/bash_aliases ~/.bash_aliases
 ln -sf $PWD/bash_profile ~/.bash_profile
 ln -sf $PWD/bashrc ~/.bashrc
 
-ln -sf $PWD/dir_colors ~/.dir_colors
-
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 
 ln -sf $PWD/zshrc ~/.zshrc

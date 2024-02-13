@@ -23,15 +23,7 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls
-if [ -x /usr/bin/dircolors ]; then
-    eval "`dircolors ~/.dir_colors`"
-    alias ls='ls --color=auto'
-else
-    # If dircolors is not available, use the standard LSCOLORS
-    # FIXME: port dircolors to Mac OSX
-    export LSCOLORS=exfxcxdxbxegedabagacad
-    alias ls='ls -G'
-fi
+alias ls='ls --color=auto'
 
 # alias definitions
 if [ -f ~/.bash_aliases ]; then
