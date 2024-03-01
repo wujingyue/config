@@ -8,8 +8,6 @@ popd
 ln -sf $PWD/vimrc ~/.vimrc
 
 ln -sf $PWD/bash_aliases ~/.bash_aliases
-ln -sf $PWD/bash_profile ~/.bash_profile
-ln -sf $PWD/bashrc ~/.bashrc
 
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 
