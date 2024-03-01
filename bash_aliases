@@ -1,3 +1,4 @@
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias tmux='tmux -2'
 alias ta0='tmux -2 attach -t 0'

@@ -29,8 +29,6 @@ TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 # Disable completing user names
 zstyle ':completion:*' users
 
-alias ls='ls --color=auto'
-
 # alias definitions
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
