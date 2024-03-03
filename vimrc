@@ -11,13 +11,6 @@ set nu
 set ruler
 filetype indent on
 filetype plugin on
-" Define text filetype
-augroup filetype
-	au! BufRead,BufNewFile *.txt set filetype=text
-	au! BufRead,BufNewFile *.ll,*.vid,*.iid set filetype=llvm
-	au! BufRead,BufNewFile *.dart set filetype=dart
-	au! BufRead,BufNewFile CMakeLists.txt set filetype=cmake
-augroup END
 syntax on
 " Highlight search
 set hls
