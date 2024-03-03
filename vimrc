@@ -7,7 +7,9 @@ set backspace=2
 " Turn off the beep in vim
 set visualbell t_vb=
 " Turn on line numbering. Turn it off with "set nonu" 
-set nu 
+set nu
+" Show the relative position at bottom right.
+set ruler
 filetype indent on
 filetype plugin on
 syntax on
