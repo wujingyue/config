@@ -33,5 +33,6 @@ set cursorline
 " Make matching case insensitive.
 set ignorecase
 " Filetype specific formatting.
-autocmd FileType python set et tabstop=4 shiftwidth=4 sts=4
+autocmd FileType python set et ts=4 sw=4 sts=4
 autocmd FileType c,cpp,cuda set et ci ts=2 sw=2 sts=2
+autocmd FileType sh set ts=2
