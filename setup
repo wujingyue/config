@@ -1,10 +1,19 @@
 #!/bin/bash
 
 rm -rf ~/.vim
+
+# Install Solarized color scheme.
 mkdir -p ~/.vim/colors
 pushd ~/.vim/colors
 wget https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 popd
+
+# Install tcomment for easily commenting out code.
+mkdir -p ~/.vim/pack/tml/start
+pushd ~/.vim/pack/tml/start
+git clone https://github.com/tomtom/tcomment_vim
+popd
+
 ln -sf $PWD/vimrc ~/.vimrc
 
 ln -sf $PWD/bash_aliases ~/.bash_aliases
