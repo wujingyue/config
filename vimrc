@@ -23,9 +23,6 @@ set wildmenu
 set ls=2
 " Highlight the bound
 set colorcolumn=81
-" Enable modeline, e.g., vim: sw=2
-set modeline
-set modelines=5 " vim in mac sets this to 0 by default
 " Choose colorscheme
 colorscheme solarized
 " Highlight the cursor line
