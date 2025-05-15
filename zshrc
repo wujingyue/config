@@ -1,3 +1,5 @@
+umask 077
+
 SHELL=/bin/zsh
 
 # Path to your oh-my-zsh configuration.
