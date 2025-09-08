@@ -35,3 +35,5 @@ set ignorecase
 autocmd FileType python set et ts=4 sw=0
 autocmd FileType c,cpp,cuda set et ci ts=2 sw=0
 autocmd FileType sh set ts=2 sw=0
+" In insert mode, option+backspace deletes the previous word.
+imap <Esc><BS> <C-w>
