@@ -1,6 +1,2 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias ta0='tmux attach -t 0'
-alias ta1='tmux attach -t 1'
-alias ta2='tmux attach -t 2'
-alias ta3='tmux attach -t 3'
