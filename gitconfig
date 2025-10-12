@@ -1,7 +1,6 @@
 [user]
 	name = Jingyue Wu
 	email = wujingyue@gmail.com
-
 [diff]
 	color = auto
 [color]
@@ -12,5 +11,3 @@
 	default = matching
 [branch "master"]
 	rebase = true
-[credential]
-	helper = osxkeychain
