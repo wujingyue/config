@@ -1,3 +1,5 @@
+# .bashrc runs for every interactive shell.
+
 umask 077
 
 # Prompt color
@@ -7,5 +9,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Aliases that are not needed for zsh. zshrc also includes .bash_aliases.
+# Aliases that are only needed for bash. zshrc installs the `tmux` plugin,
+# which comes with the `ta` alias.
 alias ta='tmux attach -t'
