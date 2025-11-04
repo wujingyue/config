@@ -1,6 +1,6 @@
-# .bash_profile runs once when you log in (SSH, console login, etc.)
+# .bash_profile runs once when you log in (SSH, console login, etc.). This file
+# is used only by Bash.
 
-# Run only when SSHing into dlcluster machines
 if [[ -n "$SSH_CONNECTION" && $(hostname) == dlcluster-login* ]]; then
 	echo
 	echo "===================================="
@@ -10,6 +10,14 @@ if [[ -n "$SSH_CONNECTION" && $(hostname) == dlcluster-login* ]]; then
 	echo
 fi
 
+if command -v docker >/dev/null 2>&1; then
+	echo
+	echo "==============================="
+	echo "== Current Docker containers =="
+	echo "==============================="
+	docker ps
+	echo
+fi
 
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
