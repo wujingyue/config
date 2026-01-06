@@ -6,7 +6,8 @@ if [[ -n "$SSH_CONNECTION" && $(hostname) == dlcluster-login* ]]; then
 	echo "===================================="
 	echo "== Current Slurm Jobs Owned by Me =="
 	echo "===================================="
-	squeue -u "$USER"
+	# With -a, squeue displays jobs in hidden partitions as well.
+	squeue -u "$USER" -a
 	echo
 fi
 
