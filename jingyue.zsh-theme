@@ -15,8 +15,10 @@ USER_AT_HOST="%{$fg[cyan]%}%n @ %m%{$reset_color%}"
 
 CURRENT_WORKING_DIR="%~"
 
+EXIT_STATUS="%(?.%F{green}✓%f.%F{red}✗%f)"
+
 # Primary prompt.
-PROMPT="${USER_AT_HOST}${DOCKER_CONTAINER_INFO} | ${CURRENT_WORKING_DIR} \$(git_prompt_info)${NEWLINE}$ "
+PROMPT="${EXIT_STATUS} ${USER_AT_HOST}${DOCKER_CONTAINER_INFO} | ${CURRENT_WORKING_DIR} \$(git_prompt_info)${NEWLINE}$ "
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$fg[red]("
