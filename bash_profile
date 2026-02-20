@@ -13,11 +13,15 @@ fi
 
 if command -v docker >/dev/null 2>&1; then
 	echo
+	echo "======================================="
+	echo "== Current Docker Images Owned by Me =="
+	echo "======================================="
+	docker images | grep "$USER"
+	echo
 	echo "==============================="
-	echo "== Current Docker containers =="
+	echo "== Current Docker Containers =="
 	echo "==============================="
 	docker ps
-	echo
 fi
 
 if [ -f ~/.bashrc ]; then
