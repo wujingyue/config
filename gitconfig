@@ -1,6 +1,7 @@
 [user]
 	name = Jingyue Wu
 	email = wujingyue@gmail.com
+	signingkey = ~/.ssh/id_rsa.pub
 [diff]
 	color = auto
 [color]
@@ -11,3 +12,7 @@
 	default = matching
 [branch "master"]
 	rebase = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
