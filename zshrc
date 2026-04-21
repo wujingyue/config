@@ -19,6 +19,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.env_vars ]; then
-    . ~/.env_vars
-fi
