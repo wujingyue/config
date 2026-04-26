@@ -1,7 +1,6 @@
 [user]
 	name = Jingyue Wu
 	email = wujingyue@gmail.com
-	signingkey = ~/.ssh/id_rsa.pub
 [diff]
 	color = auto
 [color]
@@ -16,3 +15,5 @@
 	format = ssh
 [commit]
 	gpgsign = true
+[gpg "ssh"]
+	defaultKeyCommand = ssh-add -L
