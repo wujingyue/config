@@ -19,3 +19,4 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Environmental variables go to ~/.zshenv
