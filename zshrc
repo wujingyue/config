@@ -4,7 +4,9 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="jingyue"
 
-plugins=(git history-substring-search tmux)
+# I tried the `tmux` plugin at some point but it failed with `tmux
+# rename-session`.
+plugins=(git history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
