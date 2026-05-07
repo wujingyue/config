@@ -1,7 +1,7 @@
 # .bash_profile runs once when you log in (SSH, console login, etc.). This file
 # is used only by Bash.
 
-if [[ -n "$SSH_CONNECTION" && $(hostname) == dlcluster-login* ]]; then
+if [[ -n "$SSH_CONNECTION" ]] && command -v squeue >/dev/null 2>&1; then
 	echo
 	echo "===================================="
 	echo "== Current Slurm Jobs Owned by Me =="
@@ -24,6 +24,7 @@ if command -v docker >/dev/null 2>&1; then
 	docker ps
 fi
 
+# I'm told that login shells don't load .bashrc automatically.
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
