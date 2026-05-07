@@ -8,7 +8,6 @@
 	ui = true
 [core]
 	editor = vim
-	pager = delta
 [push]
 	default = matching
 [branch "master"]
@@ -20,3 +19,6 @@
 [delta]
 	features = line-numbers
 	syntax-theme = GitHub
+[pager]
+	diff = delta 2>/dev/null || less
+	show = delta 2>/dev/null || less
