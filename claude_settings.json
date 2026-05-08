@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "WebSearch",
+      "WebFetch(*)"
+    ],
+    "ask": [
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(rm -rf *)",
+      "Bash(rm -r *)",
+      "Bash(rmdir *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git push *)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean -f*)",
+      "Bash(git checkout -- .)",
+      "Bash(git restore .)",
+      "Bash(git rm*)",
+      "Bash(> *)",
+      "Bash(chmod 777*)",
+      "Bash(mkfs*)",
+      "Bash(dd if=*)"
+    ]
+  },
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "theme": "auto"
+}

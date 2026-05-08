@@ -27,9 +27,10 @@ ln -sf $PWD/zshrc ~/.zshrc
 
 ln -sf $PWD/gitconfig ~/.gitconfig
 
-if [ ! -e ~/.ssh ]; then
-	mkdir ~/.ssh
-fi
+mkdir -p ~/.claude
+ln -sf $PWD/claude_settings.json ~/.claude/settings.json
+
+mkdir -p ~/.ssh
 
 if [ ! -e ~/.oh-my-zsh ]; then
 	git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
