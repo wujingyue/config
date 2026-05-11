@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This script doesn't `sudo` because I often have to work on servers where I'm
+# not a sudoer.
+
 rm -rf ~/.vim
 
 # Install Solarized color scheme.
