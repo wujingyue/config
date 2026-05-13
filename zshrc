@@ -20,7 +20,5 @@ TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-# ZSH-specific aliases
-alias cat='ccat'
 
 # Environmental variables go to ~/.zshenv
