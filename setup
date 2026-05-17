@@ -17,6 +17,9 @@ pushd ~/.vim/pack/tml/start
 git clone https://github.com/tomtom/tcomment_vim
 popd
 
+# Symbolically link configs to `~/.*`. I use symbolic link because local
+# changes to `~/.*` will be automatically reflected in the config repo, making
+# it easy for me to push these changes back to the repo.
 ln -sf $PWD/vimrc ~/.vimrc
 
 ln -sf $PWD/bash_aliases ~/.bash_aliases
