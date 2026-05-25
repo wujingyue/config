@@ -20,5 +20,5 @@
 	features = line-numbers
 	syntax-theme = GitHub
 [pager]
-	diff = delta 2>/dev/null || less
-	show = delta 2>/dev/null || less
+	diff = delta --paging=always 2>/dev/null || less
+	show = delta --paging=always 2>/dev/null || less
