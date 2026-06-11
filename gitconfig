@@ -14,8 +14,6 @@
 	rebase = true
 [gpg]
 	format = ssh
-[commit]
-	gpgsign = true
 [delta]
 	features = line-numbers
 	syntax-theme = GitHub
