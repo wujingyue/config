@@ -17,8 +17,6 @@ setopt share_history
 # Set the output format of "time".
 TIMEFMT=$'\nreal\t%E\nuser\t%U\nsys\t%S'
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
 
 # Environmental variables go to ~/.zshenv
