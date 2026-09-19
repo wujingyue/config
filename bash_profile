@@ -11,7 +11,9 @@ if [[ -n "$SSH_CONNECTION" ]] && command -v squeue >/dev/null 2>&1; then
 	echo
 fi
 
-if command -v docker >/dev/null 2>&1; then
+# `command -v docker` only proves the CLI exists; `docker info` also proves the
+# daemon is reachable (i.e. I'm in the docker group on this host).
+if command -v docker >/dev/null 2>&1 && docker info >/dev/null 2>&1; then
 	echo
 	echo "======================================="
 	echo "== Current Docker Images Owned by Me =="
