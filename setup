@@ -28,6 +28,9 @@ ln -sf $PWD/bash_profile ~/.bash_profile
 
 ln -sf $PWD/tmux.conf ~/.tmux.conf
 
+mkdir -p ~/.config/herdr
+ln -sf $PWD/herdr.toml ~/.config/herdr/config.toml
+
 ln -sf $PWD/zprofile ~/.zprofile
 ln -sf $PWD/zshrc ~/.zshrc
 
