@@ -2,7 +2,14 @@ onboarding = false
 
 [theme]
 name = "solarized-light"
-auto_switch = false
+
+[terminal]
+default_shell = "zsh"
 
 [keys]
 prefix = "ctrl+j"
+new_tab = ["prefix+c", "alt+t"]
+previous_tab = ["prefix+p", "alt+{"]
+next_tab = ["prefix+n", "alt+}"]
+move_tab_previous = "ctrl+shift+left"
+move_tab_next = "ctrl+shift+right"
