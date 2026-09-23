@@ -1,0 +1,5 @@
+[tui]
+theme = "github"
+# Herdr cancels double-click word selection on pane changes; animations trigger
+# frequent pane changes that immediately cancel the selection.
+animations = false

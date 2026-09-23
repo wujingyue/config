@@ -45,6 +45,11 @@ ln -sf $PWD/gitconfig ~/.gitconfig
 mkdir -p ~/.claude
 ln -sf $PWD/claude_settings.json ~/.claude/settings.json
 
+mkdir -p ~/.codex
+if [ ! -e ~/.codex/config.toml ]; then
+	cp "$PWD/codex_config.toml" ~/.codex/config.toml
+fi
+
 mkdir -p ~/.ssh
 
 if [ ! -e ~/.oh-my-zsh ]; then
