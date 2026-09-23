@@ -14,7 +14,13 @@ popd
 # Install tcomment for easily commenting out code.
 mkdir -p ~/.vim/pack/tml/start
 pushd ~/.vim/pack/tml/start
-git clone https://github.com/tomtom/tcomment_vim
+if [ -e tcomment_vim ]; then
+	pushd tcomment_vim
+	git pull
+	popd
+else
+	git clone https://github.com/tomtom/tcomment_vim
+fi
 popd
 
 # Symbolically link configs to `~/.*`. I use symbolic link because local
